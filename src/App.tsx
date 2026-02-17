@@ -12,6 +12,7 @@ function App() {
       <p>Ogrenci No: 230542018</p>
       <p>Hobilerim: Tiyatro oynamak ve izlemek</p>
       <p>Bölüm: Yazılım Mühendisliği</p>
+      <p>Öğretmen: Oğuzhan KATAR</p>
     </div >
   )
 }
