@@ -1,11 +1,16 @@
+import './App.css';
 import profileImg from './assets/profile.jfif';
 
 function App() {
   return (
     <>
+      <a href="#main-content" className="skip-link">
+        Ana içeriğe atla
+      </a>
+
       <header>
         <h1>Halit Acet - Kişisel Portfolyo</h1>
-        <nav>
+        <nav aria-label="Ana navigasyon">
           <ul>
             <li><a href="#hakkimda">Hakkımda</a></li>
             <li><a href="#projeler">Projeler</a></li>
@@ -14,10 +19,9 @@ function App() {
         </nav>
       </header>
 
-      <main>
+      <main id="main-content">
         <section id="hakkimda">
           <h2>Hakkımda</h2>
-
           <figure>
             <img
               src={profileImg}
@@ -25,7 +29,6 @@ function App() {
             />
             <figcaption>Halit Acet</figcaption>
           </figure>
-
           <p>Fırat Üniversitesi Yazılım Mühendisliği 3. sınıf öğrencisiyim.</p>
         </section>
 
