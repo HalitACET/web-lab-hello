@@ -1,7 +1,10 @@
+import profileImg from './assets/profile.jfif';
+
 function App() {
   return (
     <>
       <header>
+        <h1>Halit Acet - Kişisel Portfolyo</h1>
         <nav>
           <ul>
             <li><a href="#hakkimda">Hakkımda</a></li>
@@ -14,6 +17,16 @@ function App() {
       <main>
         <section id="hakkimda">
           <h2>Hakkımda</h2>
+
+          <figure>
+            <img
+              src={profileImg}
+              alt="Halit Acet'in vesikalık fotoğrafı"
+            />
+            <figcaption>Halit Acet</figcaption>
+          </figure>
+
+          <p>Fırat Üniversitesi Yazılım Mühendisliği 3. sınıf öğrencisiyim.</p>
         </section>
 
         <section id="projeler">
