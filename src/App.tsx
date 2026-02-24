@@ -1,19 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
 function App() {
   return (
-    <div >
-      <h1 >Web Tasarimi ve Programlama </h1 >
-      <h2 >LAB -1</h2 >
-      <p>Ad Soyad: Halit ACET</p>
-      <p>Ogrenci No: 230542018</p>
-      <p>Hobilerim: Tiyatro oynamak ve izlemek</p>
-      <p>Bölüm: Yazılım Mühendisliği</p>
-      <p>Öğretmen: Oğuzhan KATAR</p>
-    </div >
+    <>
+      <header>
+        <nav>
+          <ul>
+            <li><a href="#hakkimda">Hakkımda</a></li>
+            <li><a href="#projeler">Projeler</a></li>
+            <li><a href="#iletisim">İletişim</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section id="hakkimda">
+          <h2>Hakkımda</h2>
+        </section>
+
+        <section id="projeler">
+          <h2>Projelerim</h2>
+        </section>
+
+        <section id="iletisim">
+          <h2>İletişim</h2>
+        </section>
+      </main>
+
+      <footer>
+        <p>&copy; 2026 Halit Acet. Tüm hakları saklıdır.</p>
+      </footer>
+    </>
   )
 }
 
