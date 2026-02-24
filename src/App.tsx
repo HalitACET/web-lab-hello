@@ -10,7 +10,6 @@ function App() {
 
       <header>
         <h1>Halit Acet - Kişisel Portfolyo</h1>
-
         <nav aria-label="Ana navigasyon">
           <ul>
             <li><a href="#hakkimda">Hakkımda</a></li>
@@ -31,12 +30,27 @@ function App() {
             />
             <figcaption>Halit Acet</figcaption>
           </figure>
-          <p>Fırat Üniversitesi Yazılım Mühendisliği 3. sınıf öğrencisiyim.</p>
+          <p>Fırat Üniversitesi Yazılım Mühendisliği 3. sınıf öğrencisiyim. Web geliştirme teknolojileriyle ilgileniyorum.</p>
+          <h3>Kullandığım Teknolojiler</h3>
+          <ul>
+            <li>HTML5 & CSS3</li>
+            <li>React & TypeScript</li>
+            <li>Git & GitHub</li>
+          </ul>
         </section>
 
         <section id="projeler">
           <h2>Projelerim</h2>
-          <p>Projeler yakında eklenecek...</p>
+
+          <article>
+            <h3>E-Ticaret Sitesi</h3>
+            <p>React kullanılarak geliştirilmiş, kullanıcı dostu bir alışveriş platformu.</p>
+          </article>
+
+          <article>
+            <h3>Tiyatro Kulübü Uygulaması</h3>
+            <p>Üyesi olduğum tiyatro kulübü için geliştirdiğim yönetim sistemi.</p>
+          </article>
         </section>
 
         <section id="iletisim">
