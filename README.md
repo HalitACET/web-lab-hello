@@ -48,7 +48,7 @@ Kişisel portföy sayfasında yer alan iletişim formu, erişilebilirlik ve veri
 ### 📊 Lighthouse Erişilebilirlik Raporu
 Google Chrome Lighthouse denetimi sonucunda sayfa **Accessibility** kategorisinde **92 puan** alarak başarı kriterini karşılamıştır. 
 
-![Lighthouse Erişilebilirlik Puanı](./assets/lighthouse.png)
+![Lighthouse Erişilebilirlik Puanı](./src/assets/lighthouse.png)
 
 ---
 
