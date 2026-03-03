@@ -37,7 +37,7 @@
     --font-sans: system-ui, -apple-system, sans-serif;
     --font-mono: 'Fira Code', 'Consolas', monospace;
 
-    /* --- Font Boyutları (Fluid) --- */
+    /* Font Boyutları (Fluid) */
     --text-sm: clamp(0.8rem, 0.75rem + 0.25vw, 0.9rem);
     --text-base: clamp(1rem, 0.9rem + 0.5vw, 1.125rem);
     --text-lg: clamp(1.125rem, 1rem + 0.6vw, 1.35rem);
