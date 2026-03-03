@@ -4,12 +4,14 @@ import profileImg from './assets/profile.jfif';
 function App() {
   return (
     <>
+      {/* Erişilebilirlik: Skip Link */}
       <a href="#main-content" className="skip-link">
         Ana içeriğe atla
       </a>
 
+      {/* Responsive Header */}
       <header>
-        <h1>Halit Acet - Kişisel Portfolyo</h1>
+        <div className="site-title">Halit Acet</div>
         <nav aria-label="Ana navigasyon">
           <ul>
             <li><a href="#hakkimda">Hakkımda</a></li>
@@ -20,42 +22,83 @@ function App() {
       </header>
 
       <main id="main-content">
-
+        {/* Hakkımda Bölümü ve Skill Tags */}
         <section id="hakkimda">
           <h2>Hakkımda</h2>
-          <figure>
-            <img
-              src={profileImg}
-              alt="Halit Acet'in vesikalık fotoğrafı"
-            />
-            <figcaption>Halit Acet</figcaption>
-          </figure>
-          <p>Fırat Üniversitesi Yazılım Mühendisliği 3. sınıf öğrencisiyim. Web geliştirme teknolojileriyle ilgileniyorum.</p>
-          <h3>Kullandığım Teknolojiler</h3>
-          <ul>
-            <li>HTML5 & CSS3</li>
-            <li>React & TypeScript</li>
-            <li>Git & GitHub</li>
-          </ul>
+          <div className="about-content">
+            <figure>
+              <img src={profileImg} alt="Halit Acet'in vesikalık fotoğrafı" />
+              <figcaption>Yazılım Mühendisliği Öğrencisi</figcaption>
+            </figure>
+            <div className="about-text">
+              <p>
+                Fırat Üniversitesi Yazılım Mühendisliği 3. sınıf öğrencisiyim.
+                Web geliştirme teknolojileriyle ilgileniyorum.
+              </p>
+
+              <h3>Kullandığım Teknolojiler</h3>
+              <ul className="skill-tags" role="list" aria-label="Beceri etiketleri">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>Git</li>
+                <li>GitHub</li>
+              </ul>
+            </div>
+          </div>
         </section>
 
+        {/* Grid ile Kart Düzeni */}
         <section id="projeler">
           <h2>Projelerim</h2>
+          <div className="project-grid">
+            <article className="project-card">
+              <img
+                src="https://picsum.photos/400/250"
+                alt="E-Ticaret projesi ekran görüntüsü"
+              />
+              <div className="card-body">
+                <h3>E-Ticaret Sitesi</h3>
+                <p>
+                  React kullanılarak geliştirilmiş, kullanıcı dostu bir
+                  alışveriş platformu.
+                </p>
+                <ul className="skill-tags">
+                  <li>React</li>
+                  <li>Vite</li>
+                </ul>
+              </div>
+            </article>
 
-          <article>
-            <h3>E-Ticaret Sitesi</h3>
-            <p>React kullanılarak geliştirilmiş, kullanıcı dostu bir alışveriş platformu.</p>
-          </article>
-
-          <article>
-            <h3>Tiyatro Kulübü Uygulaması</h3>
-            <p>Üyesi olduğum tiyatro kulübü için geliştirdiğim yönetim sistemi.</p>
-          </article>
+            <article className="project-card">
+              <img
+                src="https://picsum.photos/401/250"
+                alt="Tiyatro uygulaması ekran görüntüsü"
+              />
+              <div className="card-body">
+                <h3>Tiyatro Kulübü Uygulaması</h3>
+                <p>
+                  Üyesi olduğum tiyatro kulübü için geliştirdiğim yönetim
+                  sistemi.
+                </p>
+                <ul className="skill-tags">
+                  <li>TypeScript</li>
+                  <li>CSS Grid</li>
+                </ul>
+              </div>
+            </article>
+          </div>
         </section>
 
         <section id="iletisim">
           <h2>İletişim</h2>
-          <form action="#" method="POST" noValidate>
+          <form
+            className="contact-form"
+            action="#"
+            method="POST"
+            noValidate
+          >
             <fieldset>
               <legend>İletişim Formu</legend>
 
@@ -86,7 +129,12 @@ function App() {
 
               <div className="form-group">
                 <label htmlFor="subject">Konu: </label>
-                <select id="subject" name="subject" required aria-describedby="subject-error">
+                <select
+                  id="subject"
+                  name="subject"
+                  required
+                  aria-describedby="subject-error"
+                >
                   <option value="">-- Seçiniz --</option>
                   <option value="is">İş Teklifi</option>
                   <option value="soru">Soru</option>
